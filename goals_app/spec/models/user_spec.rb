@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  let(:user) { User.new(username: 'my_user', password: '123123') }
+  subject(:user) { User.new(username: 'my_user', password: '123123') }
   
   describe User do
     
